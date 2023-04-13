@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-blogs-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    <link rel="stylesheet" href="{% static 'assets/css/our-blog2.css' %}"> 
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+    <!--main-->
+{% block content %}
+
+<header>
+    <div>
+        Our Blog
+    </div>
+</header>
+<div class="welcome">
+    <h1>Welcome to Our Blog</h1>
+    <p>Explore our blog where our experts take a deeper dive into to help you with useful insights.</p>
+</div>
+<main>
+    <section>
+        <img src="static/assets/images/unsplash-chickens.jpg" alt="">
+        <div>
+            <P>How i built a thriving Poultry farm at 25</P>
+            <P>
+                By Admin - <span>August 19, 2022</span>
+            </P>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores voluptatum unde tenetur necessitatibus eius? Amet maxime laudantium autem cumque...
+            </P>
+            <a href="/single-blog">[Read More]</a>
+        </div>
+    </section>
+    <section>
+        <img src="static/assets/images/unsplash-chickens.jpg" alt="">
+        <div>
+            <P>How i built a thriving Poultry farm at 25</P>
+            <P>
+                By Admin - <span>August 19, 2022</span>
+            </P>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores voluptatum unde tenetur necessitatibus eius? Amet maxime laudantium autem cumque...
+            </P>
+            <a href="/single-blog">[Read More]</a>
+        </div>
+    </section>
+    <section>
+        <img src="static/assets/images/unsplash-chickens.jpg" alt="">
+        <div>
+            <P>How i built a thriving Poultry farm at 25</P>
+            <P>
+                By Admin - <span>August 19, 2022</span>
+            </P>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores voluptatum unde tenetur necessitatibus eius? Amet maxime laudantium autem cumque...
+            </P>
+            <a href="/single-blog">[Read More]</a>
+        </div>
+    </section>
+    <section>
+        <img src="static/assets/images/unsplash-chickens.jpg" alt="">
+        <div>
+            <P>How i built a thriving Poultry farm at 25</P>
+            <P>
+                By Admin - <span>August 19, 2022</span>
+            </P>
+            <P>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores voluptatum unde tenetur necessitatibus eius? Amet maxime laudantium autem cumque...
+            </P>
+            <a href="/single-blog">[Read More]</a>
+        </div>
+    </section>
+</main>
+<div class="direction">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">Next</a>
+    <a href="#">
+        <img src="static/assets/images/arrrowright.svg" alt="">
+    </a>
+</div>
+<div class="container">
+    <p>How can we help you today?</p>
+    <a href="#">Send a Message</a>
+</div>
+
+{% endblock %}
+   <!--footer-->
+   {% include 'partial/footer.html' %}
+   <script src="{% static 'assets/js/our-blog2.js' %}"></script>
+</body>
+</html>

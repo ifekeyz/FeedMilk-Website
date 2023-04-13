@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-about-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    <link rel="stylesheet" href="{% static 'assets/css/about-us.css' %}">
+    
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+    <!--main-->
+    {% block content %}
+
+<header class="header1">
+    <div class="abtus">About Us</div>
+</header>
+<main>
+    <img src="static/assets/images/about-usworker.jpg" alt="worker">
+    <div class="main-text">
+        <h4>[ABOUT BAVARIA FEEDS]</h4>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit veritatis sunt.</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur recusandae in maxime adipisci, atque dolore nobis voluptatum, ut explicabo iste ullam quas aspernatur omnis ea dicta, architecto ad voluptates! Quos, amet repellat. Veritatis fugit explicabo sit, sed quibusdam sapiente nisi nostrum dolores nemo dolorem? Nihil velit accusantium quam numquam nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eveniet quasi commodi vel, excepturi laboriosam hic doloremque temporibus consequuntur nam?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nostrum sunt repellat quisquam sed omnis voluptatem et vel dolores perspiciatis id suscipit qui quam eveniet mollitia aliquid unde hic inventore assumenda dolorum, commodi quis velit? Mollitia aut perspiciatis sunt aliquid quis cumque accusantium sint odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, molestiae!
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis harum dolore. Neque distinctio nihil nisi dicta? Error a placeat repellat, expedita mollitia blanditiis dolorem tenetur laudantium rem dolore eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, cupiditate.
+        </p>
+    </div>
+</main>
+<div class="our">
+    <div>
+        <h2>Our Mission</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate aperiam ea exercitationem iure molestias nemo quisquam assumenda corrupti dignissimos. Iusto.</p>
+    </div>
+    <div>
+        <h2>Our Vision</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate aperiam ea exercitationem iure molestias nemo quisquam assumenda corrupti dignissimos. Iusto.</p>
+    </div>
+</div>
+<div class="values1">
+    <h1>
+        OUR VALUES
+    </h1>
+    <div class="value-items">
+        <section>
+            <img src="static/assets/images/ant-design_safety-outlined.png" alt="val">
+            <p>Quality</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur eos quasi voluptates ut aspernatur nostrum, doloremque aliquam?</p>
+        </section>
+        <section>
+            <img src="static/assets/images/Frame 1603.png" alt="val">
+            <p>Customer Focused</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur eos quasi voluptates ut aspernatur nostrum, doloremque aliquam?</p>
+        </section>
+        <section>
+            <img src="static/assets/images/akar-icons_people-group.png" alt="val">
+            <p>Reliability</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur eos quasi voluptates ut aspernatur nostrum, doloremque aliquam?</p>
+        </section>
+    </div>
+</div>
+<div class="container">
+    <p>How may we help you today?</p>
+    <a href="#">Send a Message</a>
+</div>
+
+{% endblock %}
+{% include 'partial/footer.html' %}
+    <script src="{% static 'assets/js/about-us.js' %}"></script>
+</body>
+</html>

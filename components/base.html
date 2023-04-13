@@ -1,0 +1,32 @@
+<!-- {% load static %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-landing-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    <link rel="stylesheet" href="{% static 'assets/css/about-us.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/product.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'assets/css/bavaria-landing-page.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/ourblog.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/contact-us.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/our-blog2.css' %}"> -->
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+    <!--main-->
+    {% block content %}{% endblock %}
+    <!--footer-->
+    {% include 'partial/footer.html' %}
+    <script src="{% static 'assets/js/bavaria.js' %}"></script>
+    <script src="{% static 'assets/js/product.js' %}"></script>
+    <script src="{% static 'assets/js/about-us.js' %}"></script>
+    <script src="{% static 'assets/js/ourblog.js' %}"></script>
+    <script src="{% static 'assets/js/contact-us.js' %}"></script>
+    <script src="{% static 'assets/js/our-blog2.js' %}"></script>
+</body>
+</html>

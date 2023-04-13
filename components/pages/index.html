@@ -1,0 +1,244 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-landing-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    <link rel="stylesheet" href="{% static 'assets/css/about-us.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/product.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'assets/css/bavaria-landing-page.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/ourblog.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/contact-us.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/our-blog2.css' %}"> -->
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+    <!--main-->
+    {% block content %}
+<header>
+    <h1>
+        The best animal feed for farmers nationwide.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sit similique repellendus tempore quas optio nulla dolorum.
+    </p>
+    <div>
+        <a href="#">Contact Us</a>
+        <a href="#">See Products</a>
+    </div>
+</header>
+<div class="container">
+    <p>How may we help you today?</p>
+    <a href="#">Leave a Message</a>
+</div>
+<div class="about-us">
+    <img src="static/assets/images/Feed-mill_AdobeStock_96339949_E.jpg" alt="">
+    <div class="about-us-content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt et beatae placeat fuga iste animi voluptates suscipit. Molestiae, vero minima necessitatibus quae reiciendis molestias labore deserunt voluptates laudantium a in rerum esse voluptas omnis fugiat architecto unde. Commodi animi corporis repellat nisi, eaque voluptatem laudantium nulla libero? Molestias libero fugit repudiandae maxime sit nemo labore maiores nobis, iure aperiam voluptate.</p>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+<div class="values">
+    <h2>Our Values</h2>
+    <div class="value-content">
+        <section>
+            <img src="static/assets/images/Frame1603.png" alt="value-icon">
+            <p>Quality</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab itaque debitis vitae distinctio rem accusamus explicabo!
+            </p>
+        </section>
+        <section>
+            <img src="static/assets/images/ant-design_safety-outlined.png" alt="value-icon">
+            <p>Reliabilty</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab itaque debitis vitae distinctio rem accusamus explicabo!
+            </p>
+        </section>
+        <section>
+            <img src="static/assets/images/akar-icons_people-group.png" alt="value-icon">
+            <p>Customer Focused</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab itaque debitis vitae distinctio rem accusamus explicabo!
+            </p>
+        </section>
+    </div>
+</div>
+<div class="products-text">
+    <h1>Our Products</h1>
+    <p>Our products are produced under strict hygenic conditions, quality supervisions, quality assurance and control ethics.</p>
+</div>
+<div class="products-slider">
+    <div class="products">
+        <div>
+            <img src="static/assets/images/cattlefeed.jpg" alt="">
+            <a href="#">Read more</a>
+        </div>
+        <div>
+            <img src="static/assets/images/chickenfeed.jpg" alt="">
+            <a href="#">Read more</a>
+        </div>
+        <div>
+            <img src="static/assets/images/cattlefeed.jpg" alt="">
+            <a href="#">Read more</a>
+        </div>
+        <div>
+            <img src="static/assets/images/chickenfeed.jpg" alt="">
+            <a href="#">Read more</a>
+        </div>
+    </div>
+    <div class="arrows">
+        <img src="static/assets/images/green-arrow.png" alt="">
+        <img src="static/assets/images/white-arrow.png" alt="">
+    </div>
+</div>
+<div class="accordion">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-flex">
+        <section class="faq-hold">
+            <div class="faq1">
+                <div>
+                    <p class="faqq" >How much is your feed</p>
+                    <img class="faq1-plus" src="static/assets/images/green-plus.png" alt="plus">
+                </div>
+                <div class="faq1-answer">
+                    <p class="faq1-answer-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ab quo nostrum perspiciatis, reprehenderit et possimus ea veniam! Quibusdam eveniet ex ratione placeat nam dolorem molestiae perferendis enim quasi! Numquam, repellendus magni possimus quam quod quas. Incidunt expedita aliquam pariatur.
+                    </p>
+                </div>
+            </div>
+            <div class="faq2">
+                <div>
+                    <p class="faqq" >How much is your feed</p>
+                    <img class="faq2-plus" src="static/assets/images/green-plus.png" alt="plus">
+                </div>
+                <div class="faq2-answer">
+                    <p class="faq2-answer-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ab quo nostrum perspiciatis, reprehenderit et possimus ea veniam! Quibusdam eveniet ex ratione placeat nam dolorem molestiae perferendis enim quasi! Numquam, repellendus magni possimus quam quod quas. Incidunt expedita aliquam pariatur.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-hold">
+            <div class="faq3">
+                <div>
+                    <p class="faqq" >How do i become a distributor of your product.
+                    </p>
+                    <img class="faq3-plus" src="static/assets/images/green-plus.png" alt="plus">
+                </div>
+                <div class="faq3-answer">
+                    <p class="faq3-answer-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ab quo nostrum perspiciatis, reprehenderit et possimus ea veniam! Quibusdam eveniet ex ratione placeat nam dolorem molestiae perferendis enim quasi! Numquam, repellendus magni possimus quam quod quas. Incidunt expedita aliquam pariatur.
+                    </p>
+                </div>
+            </div>
+            <div class="faq4">
+                <div>
+                    <p class="faqq" >How do i become a distributor of your product.
+                    </p>
+                    <img class="faq4-plus" src="static/assets/images/green-plus.png" alt="plus">
+                </div>
+                <div class="faq4-answer">
+                    <p class="faq4-answer-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ab quo nostrum perspiciatis, reprehenderit et possimus ea veniam! Quibusdam eveniet ex ratione placeat nam dolorem molestiae perferendis enim quasi! Numquam, repellendus magni possimus quam quod quas. Incidunt expedita aliquam pariatur.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="get-in-touch">
+    <h1>Get in Touch</h1>
+    <div class="getintouch-text">
+        <section class="contact-info">
+                <h2>
+                    CONTACT INFO
+                </h2>
+                <div>
+                    <img src="static/assets/images/green-location.png" alt="">
+                    <p>#40 Lateef Jakande road, Owu Ikosi. Off Ikorodu-Epe road, Iganke, Epe Lagos.</p>
+                </div>
+                <div>
+                    <img src="static/assets/images/clarity_email-solid.png" alt="">
+                    <p>info@baraviagroup.com</p>
+                </div>
+                <div>
+                    <img src="static/assets/images/green-phone.png" alt="">
+                    <p>+234 803 322 1935</p>
+                </div>
+            </section>
+    
+        <form class="form1" action="">
+            <div>
+                <input class="normal-input" type="text" placeholder="Name">
+                <input class="normal-input" type="email" name="" id="" placeholder="Enter your Email">
+            </div>
+            <textarea placeholder="Message..." class="message-input" name="" id="" cols="30" rows="10"></textarea>
+            <a class="contactus-btn2" href="#">CONTACT US</a>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div class="blog-posts">
+    <h1>Blog Posts</h1>
+    <div>
+        <section>
+            <img src="static/assets/images/unsplash_a7VG3Jrl2Lg.jpg" alt="chickens">
+            <h2>How i built a thriving poultry farm at 25</h2>
+            <p>
+                By Admin - 
+                <span>August 19, 2022</span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis itaque debitis pariatur...</p>
+        </section>
+        <section>
+            <img src="static/assets/images/unsplash_a7VG3Jrl2Lg.jpg" alt="chickens">
+            <h2>How i built a thriving poultry farm at 25</h2>
+            <p>
+                By Admin - 
+                <span>August 19, 2022</span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis itaque debitis pariatur...</p>
+        </section>
+        <section>
+            <img src="static/assets/images/unsplash_a7VG3Jrl2Lg.jpg" alt="chickens">
+            <h2>How i built a thriving poultry farm at 25</h2>
+            <p>
+                By Admin - 
+                <span>August 19, 2022</span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis itaque debitis pariatur...</p>
+        </section>
+        <section>
+            <img src="static/assets/images/unsplash_a7VG3Jrl2Lg.jpg" alt="chickens">
+            <h2>How i built a thriving poultry farm at 25</h2>
+            <p>
+                By Admin - 
+                <span>August 19, 2022</span>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis itaque debitis pariatur...</p>
+        </section>
+    </div>
+</div>
+
+
+{% endblock %}
+{% include 'partial/footer.html' %}
+<script src="{% static 'assets/js/bavaria.js' %}"></script>
+<script src="{% static 'assets/js/product.js' %}"></script>
+<script src="{% static 'assets/js/about-us.js' %}"></script>
+<script src="{% static 'assets/js/ourblog.js' %}"></script>
+<script src="{% static 'assets/js/contact-us.js' %}"></script>
+<script src="{% static 'assets/js/our-blog2.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-landing-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    <link rel="stylesheet" href="{% static 'assets/css/ourblog.css' %}">
+   
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+    <!--main-->
+{% block content %}
+
+<header>
+    <div>
+        Our Blog
+    </div>
+</header>
+<main>
+    <div class="pages">
+        <a href="#">Home /</a>
+        <a href="#">Our Blog /</a>
+        <a href="#">Article 1</a>
+    </div>
+    <article>
+        <figure class="chicken"></figure>
+    <h1 class="speech-header">
+        How i built a thriving poultry farm at 25
+    </h1>
+    <div class="date">
+        <i>
+            By Admin -
+        </i>
+        <span>
+            August 19, 2022
+        </span>
+    </div>
+    <div class="speech">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed cumque nam quia corrupti, mollitia numquam veniam dolore, iste eos, laudantium nemo et sequi autem accusantium asperiores exercitationem itaque qui debitis odio? Consectetur nulla doloremque reprehenderit cum maiores. Ipsum fugit voluptate blanditiis veritatis aut quo et quam numquam ex iure, assumenda magni, facilis suscipit corporis expedita. Officia iure quas corrupti perferendis culpa doloribus deserunt enim porro animi dolorum, quasi distinctio aperiam consequatur praesentium pariatur tempora libero cum, minima soluta.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque distinctio, modi doloremque maiores quaerat perferendis corrupti quidem dolores, molestiae reiciendis non. Eaque ab, aspernatur at nam repudiandae expedita totam fuga doloremque nesciunt nihil fugiat commodi aliquid sint minima obcaecati consequuntur reprehenderit architecto cupiditate blanditiis molestias perferendis similique iure. Nihil a quisquam aliquid voluptate consequuntur, odit, iste autem molestias perspiciatis expedita natus qui soluta perferendis? Ipsum molestiae vel quia nulla culpa eaque, odio repudiandae laborum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error saepe reprehenderit, sequi asperiores harum quia? Architecto nobis facilis commodi sapiente! Excepturi atque placeat delectus, ipsa minus dolores. Autem molestias nulla optio quidem ut eum nam est reiciendis ratione harum accusamus, natus suscipit, recusandae voluptas vitae deleniti voluptatibus iure voluptatum! Atque officiis, dolorem nulla debitis voluptatem cumque in culpa quam accusantium quisquam eos repellat nihil repellendus velit rerum quasi voluptas ducimus enim amet ratione mollitia aliquid asperiores aperiam at?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas sint vitae commodi modi? Eum commodi modi tempora, quae sit quaerat dolorum saepe repellat dolorem, asperiores mollitia ad eligendi porro rem doloremque cumque! Ipsum, ea tempore id distinctio ullam amet assumenda cumque dicta molestias perspiciatis maxime exercitationem reprehenderit magni! Hic nesciunt, facere fugit quae laudantium earum id illo provident qui suscipit nisi eaque at. Hic quam perferendis minus modi dolor sequi blanditiis! Nostrum culpa, labore ullam obcaecati maiores tempora atque odit.</p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita, aliquam non eum iure quia sed veritatis deleniti ducimus nulla dolor neque blanditiis debitis iusto accusantium illo reprehenderit libero dolores dolorem enim quos qui. Ullam quod ipsa rerum ipsam, possimus est sunt odio quisquam vero blanditiis dolorem porro architecto placeat, modi at eos quos? Consectetur quia laborum a labore cum?
+        </p>
+        <p>
+            <i><b>Reference:</b></i>
+            Lorem ipsum dolor sit amet,
+            <a href="#">https:querty/</a>
+        </p>
+    </div>
+    </article>
+</main>
+<hr class="first-rule">
+<div class="direction">
+    <div class="left-previous">
+        <img src="static/assets/images/arrrow-left (1).svg" alt="">
+        <div>
+            <a href="#">PREVIOUS</a>
+            <p>How i built a thriving poultry farm at 25</p>
+        </div>
+    </div>
+    <div class="right-next">
+        <div>
+            <a href="#">NEXT</a>
+            <p>How i built a thriving poultry farm at 25</p>
+        </div>
+        <img src="static/assets/images/arrrowright.svg" alt="">
+    </div>
+</div>
+<hr class="first-rule">
+<div class="form-head">
+    <p>Leave a reply</p>
+    <span></span>
+    <p>Your email address will not be published. Required fields are marked*</p>
+</div>
+<form>
+    <section>
+        <div>
+            <label for="name">Name*</label>
+            <input class="name-input" name="name" type="text">
+        </div>
+        <div>
+            <label for="mail">Email*</label>
+            <input class="email-input" name="mail" type="email">
+        </div>
+    </section>
+    <section>
+        <label for="comment">Comments*</label>
+        <input class="comment-input" type="text">
+    </section>
+    <button type="submit">
+        Post Comment
+    </button>
+</form>
+{% endblock %}
+<!--footer-->
+{% include 'partial/footer.html' %}
+<script src="{% static 'assets/js/ourblog.js' %}"></script>
+
+</body>
+</html

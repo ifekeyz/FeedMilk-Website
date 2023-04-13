@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavaria-product-page</title> 
+    <link rel="icon" href="{% static 'assets/images/Bavaria-logo.svg' %}" sizes="32">
+    >
+    <link rel="stylesheet" href="{% static 'assets/css/product.css' %}">
+</head>
+<body>
+    <!--navbar-->
+    {% include 'partial/navbar.html' %}
+{% block content %}
+<header>
+    <div>
+        Our Product
+    </div>
+</header>
+<div class="products">
+    <h1>Our Products</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem placeat quibusdam a eum recusandae autem harum ducimus facere architecto sequi? Dignissimos vel unde, corporis recusandae nesciunt quam amet. Nam, corporis. Sequi, voluptatem libero sint at aperiam quos commodi.
+    </p>
+    <hr>
+</div>
+<div class="list">
+    <p>
+        The full list of our range of straight feed products is as follows:
+    </p>
+    <div class="list-links">
+        <a href="#">ALL</a>
+        <a href="#">POULTRY FEED</a>
+        <a href="#">SPECIAL FEEDS</a>
+        <a href="#">CONCENTRATES</a>
+        <a href="#">FISH FEED</a>
+        <a href="#">RUMINANT FEED</a>
+        <a href="#">PET FEED</a>
+    </div>
+</div>
+<main>
+    <section>
+        <img src="static/assets/images/c png 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+    <section>
+        <img src="static/assets/images/BF PNG 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+    <section>
+        <img src="static/assets/images/c png 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+    <section>
+        <img src="static/assets/images/c png 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+    <section>
+        <img src="static/assets/images/BF PNG 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+    <section>
+        <img src="static/assets/images/c png 1.jpg" alt="feed">
+        <h4>Layer Concentrate</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione, nobis dolorem temporibus et facere dolor magni iure quae iste nulla est dolores reprehenderit libero similique nostrum quia tenetur sint vitae non. Distinctio voluptates exercitationem itaque corrupti, nobis ex at maxime, culpa pariatur placeat earum.</p>
+    </section>
+</main>
+<div class="direction">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">Next</a>
+    <a href="#">
+        <img src="static/assets/images/arrrowright.svg" alt="">
+    </a>
+</div>
+<div class="container">
+    <p>How may we help you today?</p>
+    <a href="#">Send a Message</a>
+</div>
+
+
+
+
+{% endblock %}
+ <!--footer-->
+ {% include 'partial/footer.html' %}
+ <script src="{% static 'assets/js/product.js' %}"></script>
+</html>
